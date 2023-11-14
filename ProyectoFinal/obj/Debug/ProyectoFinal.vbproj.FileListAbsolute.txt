@@ -13,3 +13,4 @@ C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\Proyect
 C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.exe
 C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.xml
 C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.frmAgregarAlumnos.resources

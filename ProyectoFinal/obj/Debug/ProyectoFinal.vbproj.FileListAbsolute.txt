@@ -14,3 +14,10 @@ C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\Proyect
 C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.xml
 C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
 C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.frmAgregarAlumnos.resources
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.frmAgregarCalificaciones.resources
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.frmAgregarMaterias.resources
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.frmAgregarUsuarios.resources
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.frmListaAlumnos.resources
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.frmListaCalificaciones.resources
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.frmListaMaterias.resources
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.frmListaUsuarios.resources

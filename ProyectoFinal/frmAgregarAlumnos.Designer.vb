@@ -22,15 +22,17 @@ Partial Class frmAgregarAlumnos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAgregarAlumnos))
         Me.SuspendLayout()
         '
         'frmAgregarAlumnos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(509, 227)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmAgregarAlumnos"
-        Me.Text = "frmAgregarAlumnos"
+        Me.Text = "Agregar Alumnos"
         Me.ResumeLayout(False)
 
     End Sub

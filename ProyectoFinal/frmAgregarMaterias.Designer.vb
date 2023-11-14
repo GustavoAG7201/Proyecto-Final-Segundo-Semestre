@@ -22,9 +22,18 @@ Partial Class frmAgregarMaterias
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAgregarMaterias))
+        Me.SuspendLayout()
+        '
+        'frmAgregarMaterias
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "frmAgregarMaterias"
+        Me.ClientSize = New System.Drawing.Size(491, 213)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "frmAgregarMaterias"
+        Me.Text = "Agregar Materias"
+        Me.ResumeLayout(False)
+
     End Sub
 End Class

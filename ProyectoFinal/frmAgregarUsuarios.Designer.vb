@@ -22,9 +22,18 @@ Partial Class frmAgregarUsuarios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAgregarUsuarios))
+        Me.SuspendLayout()
+        '
+        'frmAgregarUsuarios
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "frmAgregarUsuarios"
+        Me.ClientSize = New System.Drawing.Size(548, 228)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "frmAgregarUsuarios"
+        Me.Text = "Agregar Usuarios"
+        Me.ResumeLayout(False)
+
     End Sub
 End Class

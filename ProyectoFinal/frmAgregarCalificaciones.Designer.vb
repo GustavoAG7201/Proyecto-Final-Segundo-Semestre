@@ -22,9 +22,18 @@ Partial Class frmAgregarCalificaciones
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAgregarCalificaciones))
+        Me.SuspendLayout()
+        '
+        'frmAgregarCalificaciones
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "frmAgregarCalificaciones"
+        Me.ClientSize = New System.Drawing.Size(455, 225)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "frmAgregarCalificaciones"
+        Me.Text = "Agregar Calificaciones"
+        Me.ResumeLayout(False)
+
     End Sub
 End Class

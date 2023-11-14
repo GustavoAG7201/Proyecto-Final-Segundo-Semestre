@@ -176,6 +176,27 @@
     <EmbeddedResource Include="frmAgregarAlumnos.resx">
       <DependentUpon>frmAgregarAlumnos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarCalificaciones.resx">
+      <DependentUpon>frmAgregarCalificaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarMaterias.resx">
+      <DependentUpon>frmAgregarMaterias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarUsuarios.resx">
+      <DependentUpon>frmAgregarUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaAlumnos.resx">
+      <DependentUpon>frmListaAlumnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaCalificaciones.resx">
+      <DependentUpon>frmListaCalificaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaMaterias.resx">
+      <DependentUpon>frmListaMaterias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaUsuarios.resx">
+      <DependentUpon>frmListaUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm1.resx">
       <DependentUpon>LoginForm1.vb</DependentUpon>
     </EmbeddedResource>

@@ -1,0 +1,15 @@
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.vbproj.AssemblyReference.cache
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.frmAcercaDe.resources
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.frmMenu.resources
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.Resources.resources
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.SplashScreen1.resources
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.vbproj.GenerateResource.cache
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.vbproj.CoreCompileInputs.cache
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.frmLogin.resources
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\bin\Debug\ProyectoFinal.exe.config
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\bin\Debug\ProyectoFinal.exe
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\bin\Debug\ProyectoFinal.pdb
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\bin\Debug\ProyectoFinal.xml
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.exe
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.xml
+C:\Users\Gustavo Alonso\Documents\GitHub\Proyecto-Final-Segundo-Semestre\ProyectoFinal\obj\Debug\ProyectoFinal.pdb

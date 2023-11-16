@@ -37,6 +37,8 @@ Partial Class frmAgregarUsuarios
         Me.txtApellidoPaterno = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtApellidoMaterno = New System.Windows.Forms.TextBox()
+        Me.btnCancelar = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -161,11 +163,31 @@ Partial Class frmAgregarUsuarios
         Me.txtApellidoMaterno.Size = New System.Drawing.Size(181, 20)
         Me.txtApellidoMaterno.TabIndex = 13
         '
+        'btnCancelar
+        '
+        Me.btnCancelar.Location = New System.Drawing.Point(29, 343)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.TabIndex = 14
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = True
+        '
+        'btnGuardar
+        '
+        Me.btnGuardar.Location = New System.Drawing.Point(353, 343)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(75, 23)
+        Me.btnGuardar.TabIndex = 15
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = True
+        '
         'frmAgregarUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(466, 378)
+        Me.Controls.Add(Me.btnGuardar)
+        Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.txtApellidoMaterno)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.txtApellidoPaterno)
@@ -202,4 +224,6 @@ Partial Class frmAgregarUsuarios
     Friend WithEvents txtApellidoPaterno As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents txtApellidoMaterno As TextBox
+    Friend WithEvents btnCancelar As Button
+    Friend WithEvents btnGuardar As Button
 End Class

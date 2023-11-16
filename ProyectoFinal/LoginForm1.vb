@@ -8,4 +8,7 @@ Public Class frmLogin
         Me.Close()
     End Sub
 
+    Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Private conexion1
+    End Sub
 End Class

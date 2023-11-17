@@ -23,17 +23,31 @@ Partial Class frmListaMaterias
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmListaMaterias))
+        Me.dgvListaMaterias = New System.Windows.Forms.DataGridView()
+        CType(Me.dgvListaMaterias, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'dgvListaMaterias
+        '
+        Me.dgvListaMaterias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvListaMaterias.Location = New System.Drawing.Point(12, 12)
+        Me.dgvListaMaterias.Name = "dgvListaMaterias"
+        Me.dgvListaMaterias.Size = New System.Drawing.Size(553, 293)
+        Me.dgvListaMaterias.TabIndex = 0
         '
         'frmListaMaterias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(475, 220)
+        Me.ClientSize = New System.Drawing.Size(577, 317)
+        Me.Controls.Add(Me.dgvListaMaterias)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmListaMaterias"
         Me.Text = "Lista Materias"
+        CType(Me.dgvListaMaterias, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents dgvListaMaterias As DataGridView
 End Class

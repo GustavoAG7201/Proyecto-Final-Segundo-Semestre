@@ -2,7 +2,7 @@ Imports System.Data.OleDb
 
 Public Class frmLogin
 
-    Private conexion As New OleDbConnection()
+    Private conexion As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.16.0;Data Source=" & Application.StartupPath & "\CBTis137.accdb")
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
         'Alonso Gutierrez Gustavo'

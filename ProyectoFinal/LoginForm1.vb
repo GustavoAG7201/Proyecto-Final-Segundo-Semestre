@@ -6,7 +6,17 @@ Public Class frmLogin
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
         'Alonso Gutierrez Gustavo'
+
+        Try
+            conexion.Open()
+            MsgBox("Conexion a la base de datos establecida!")
+        Catch ex As Exception
+            MsgBox("Error al intentar conectarse a la base de datos: " & ex.Message, MsgBoxStyle.Critical, "Error")
+
+        End Try
+
         frmMenu.Show()
+
 
     End Sub
 

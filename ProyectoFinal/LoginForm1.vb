@@ -2,20 +2,11 @@ Imports System.Data.OleDb
 
 Public Class frmLogin
 
-    Private conexion As New OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\CBTis137_antigua.accdb")
-
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
         'Alonso Gutierrez Gustavo'
 
-        Try
-            conexion.Open()
-            MsgBox("Conexion a la base de datos establecida!")
-        Catch ex As Exception
-            MsgBox("Error al intentar conectarse a la base de datos: " & ex.Message, MsgBoxStyle.Critical, "Error")
-
-        End Try
-
         frmMenu.Show()
+        Me.Close()
 
 
     End Sub

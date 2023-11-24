@@ -76,7 +76,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 108)
+        Me.Label2.Location = New System.Drawing.Point(254, 47)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(125, 20)
         Me.Label2.TabIndex = 11
@@ -84,7 +84,7 @@ Partial Class frmAgregarAlumnos
         '
         'txtApellidoPaterno
         '
-        Me.txtApellidoPaterno.Location = New System.Drawing.Point(16, 131)
+        Me.txtApellidoPaterno.Location = New System.Drawing.Point(258, 70)
         Me.txtApellidoPaterno.Name = "txtApellidoPaterno"
         Me.txtApellidoPaterno.Size = New System.Drawing.Size(181, 20)
         Me.txtApellidoPaterno.TabIndex = 12
@@ -93,7 +93,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(254, 47)
+        Me.Label3.Location = New System.Drawing.Point(12, 108)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(128, 20)
         Me.Label3.TabIndex = 13
@@ -101,7 +101,7 @@ Partial Class frmAgregarAlumnos
         '
         'txtApellidoMaterno
         '
-        Me.txtApellidoMaterno.Location = New System.Drawing.Point(258, 70)
+        Me.txtApellidoMaterno.Location = New System.Drawing.Point(16, 141)
         Me.txtApellidoMaterno.Name = "txtApellidoMaterno"
         Me.txtApellidoMaterno.Size = New System.Drawing.Size(181, 20)
         Me.txtApellidoMaterno.TabIndex = 14
@@ -145,9 +145,12 @@ Partial Class frmAgregarAlumnos
         'nudSemestreAlumno
         '
         Me.nudSemestreAlumno.Location = New System.Drawing.Point(12, 244)
+        Me.nudSemestreAlumno.Maximum = New Decimal(New Integer() {6, 0, 0, 0})
+        Me.nudSemestreAlumno.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nudSemestreAlumno.Name = "nudSemestreAlumno"
         Me.nudSemestreAlumno.Size = New System.Drawing.Size(120, 20)
         Me.nudSemestreAlumno.TabIndex = 19
+        Me.nudSemestreAlumno.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'Label7
         '

@@ -7,7 +7,7 @@ Public Class frmAgregarUsuarios
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         'Gustavo Alonso Gutierrez'
 
-        Dim usuario As String = txtUsuario.Text
+
         Dim correo As String = txtCorreoUsuario.Text
         Dim contrasena As String = txtContrasenaUsuario.Text
         Dim nombreUsuario As String = txtNombreUsuario.Text
@@ -16,8 +16,17 @@ Public Class frmAgregarUsuarios
 
         Dim consulta As String
 
-        If usuario = "" Or correo = "" Or contrasena = "" Then
+        If nombreUsuario = "" Or correo = "" Or contrasena = "" Then
             MsgBox("Por favor, llena el formulario", MsgBoxStyle.Critical, "Aviso")
         End If
+
+        Try
+            conexion1.Open()
+
+            consulta = "INSERT INTO usuarios (correo, contrasena, nombre, paterno, materno, usuario) VALUES (" & correo & ", " & contrasena & ", " & nombreUsuario & ", " & apellidoPaterno & ", " & apellidoMaterno & " )"
+
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class

@@ -6,7 +6,7 @@ Public Class frmLogin
         'Alonso Gutierrez Gustavo'
 
         frmMenu.Show()
-        Me.Close()
+
 
 
     End Sub

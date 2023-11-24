@@ -23,10 +23,22 @@ Public Class frmAgregarUsuarios
         Try
             conexion1.Open()
 
-            consulta = "INSERT INTO usuarios (correo, contrasena, nombre, paterno, materno, usuario) VALUES (" & correo & ", " & contrasena & ", " & nombreUsuario & ", " & apellidoPaterno & ", " & apellidoMaterno & " )"
+            consulta = "INSERT INTO usuarios (correo, contrasena, nombre_usuario, paterno, materno) VALUES 
+            ('" & correo & "', '" & contrasena & "', '" & nombreUsuario & "', '" & apellidoPaterno & "', '" & apellidoMaterno & "' )"
+
+            Dim comando As New OleDbCommand(consulta, conexion1)
+
+            comando.ExecuteNonQuery() 'indica que se inserta, actualiza o elimina datos'
+            conexion1.Close()
+
+            MsgBox("Tu informacion se guardo correctamente!", MsgBoxStyle.Information, "Aviso")
+            Me.Close()
 
         Catch ex As Exception
-
+            MsgBox(ex.Message)
+            Me.Close()
         End Try
     End Sub
+
+
 End Class

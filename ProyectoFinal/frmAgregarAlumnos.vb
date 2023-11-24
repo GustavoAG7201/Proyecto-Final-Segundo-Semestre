@@ -6,7 +6,7 @@ Public Class frmAgregarAlumnos
         Dim nombreAlumno As String = txtNombreAlumno.Text
         Dim apellidoPaterno As String = txtApellidoPaterno.Text
         Dim generacion As String = cmbGeneracionAlumno.Text
-        Dim fechaNacimiento As Date
+
 
     End Sub
 End Class

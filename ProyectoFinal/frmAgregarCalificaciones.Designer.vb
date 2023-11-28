@@ -32,6 +32,8 @@ Partial Class frmAgregarCalificaciones
         Me.nudPromedio = New System.Windows.Forms.NumericUpDown()
         Me.btnCancelarCalificacion = New System.Windows.Forms.Button()
         Me.btnAgregarCalificacion = New System.Windows.Forms.Button()
+        Me.cmbAlumno = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.nudPromedio, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -49,7 +51,7 @@ Partial Class frmAgregarCalificaciones
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(13, 47)
+        Me.Label2.Location = New System.Drawing.Point(12, 99)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 20)
         Me.Label2.TabIndex = 1
@@ -59,7 +61,7 @@ Partial Class frmAgregarCalificaciones
         '
         Me.cmbMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbMateria.FormattingEnabled = True
-        Me.cmbMateria.Location = New System.Drawing.Point(17, 70)
+        Me.cmbMateria.Location = New System.Drawing.Point(16, 128)
         Me.cmbMateria.Name = "cmbMateria"
         Me.cmbMateria.Size = New System.Drawing.Size(178, 21)
         Me.cmbMateria.TabIndex = 2
@@ -68,7 +70,7 @@ Partial Class frmAgregarCalificaciones
         '
         Me.cmbParcial.FormattingEnabled = True
         Me.cmbParcial.Items.AddRange(New Object() {"Primero", "Segundo", "Tercero"})
-        Me.cmbParcial.Location = New System.Drawing.Point(16, 121)
+        Me.cmbParcial.Location = New System.Drawing.Point(17, 175)
         Me.cmbParcial.Name = "cmbParcial"
         Me.cmbParcial.Size = New System.Drawing.Size(178, 21)
         Me.cmbParcial.TabIndex = 3
@@ -77,7 +79,7 @@ Partial Class frmAgregarCalificaciones
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(13, 98)
+        Me.Label3.Location = New System.Drawing.Point(12, 152)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 20)
         Me.Label3.TabIndex = 4
@@ -104,7 +106,7 @@ Partial Class frmAgregarCalificaciones
         '
         'btnCancelarCalificacion
         '
-        Me.btnCancelarCalificacion.Location = New System.Drawing.Point(17, 157)
+        Me.btnCancelarCalificacion.Location = New System.Drawing.Point(16, 212)
         Me.btnCancelarCalificacion.Name = "btnCancelarCalificacion"
         Me.btnCancelarCalificacion.Size = New System.Drawing.Size(75, 23)
         Me.btnCancelarCalificacion.TabIndex = 7
@@ -113,18 +115,39 @@ Partial Class frmAgregarCalificaciones
         '
         'btnAgregarCalificacion
         '
-        Me.btnAgregarCalificacion.Location = New System.Drawing.Point(397, 157)
+        Me.btnAgregarCalificacion.Location = New System.Drawing.Point(397, 212)
         Me.btnAgregarCalificacion.Name = "btnAgregarCalificacion"
         Me.btnAgregarCalificacion.Size = New System.Drawing.Size(75, 23)
         Me.btnAgregarCalificacion.TabIndex = 8
         Me.btnAgregarCalificacion.Text = "Guardar"
         Me.btnAgregarCalificacion.UseVisualStyleBackColor = True
         '
+        'cmbAlumno
+        '
+        Me.cmbAlumno.FormattingEnabled = True
+        Me.cmbAlumno.Items.AddRange(New Object() {"Primero", "Segundo", "Tercero"})
+        Me.cmbAlumno.Location = New System.Drawing.Point(17, 75)
+        Me.cmbAlumno.Name = "cmbAlumno"
+        Me.cmbAlumno.Size = New System.Drawing.Size(178, 21)
+        Me.cmbAlumno.TabIndex = 9
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(18, 52)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(63, 20)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Alumno"
+        '
         'frmAgregarCalificaciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(484, 192)
+        Me.ClientSize = New System.Drawing.Size(484, 247)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.cmbAlumno)
         Me.Controls.Add(Me.btnAgregarCalificacion)
         Me.Controls.Add(Me.btnCancelarCalificacion)
         Me.Controls.Add(Me.nudPromedio)
@@ -152,4 +175,6 @@ Partial Class frmAgregarCalificaciones
     Friend WithEvents nudPromedio As NumericUpDown
     Friend WithEvents btnCancelarCalificacion As Button
     Friend WithEvents btnAgregarCalificacion As Button
+    Friend WithEvents cmbAlumno As ComboBox
+    Friend WithEvents Label5 As Label
 End Class

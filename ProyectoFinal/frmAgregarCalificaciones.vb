@@ -7,12 +7,26 @@ Public Class frmAgregarCalificaciones
         Try
             conexion1.Open()
 
-            Dim consulta As String = "Select id_materia, nombre From materias"
-            Dim tabla As New DataTable
-            Dim adapter As New OleDbDataAdapter(consulta, conexion1)
-            adapter.Fill(tabla)
+            Dim consulta1 As String = "Select id_alumnos, nombre From alumnos"
+            Dim tabla1 As New DataTable
+            Dim adapter1 As New OleDbDataAdapter(consulta1, conexion1)
+            adapter1.Fill(tabla1)
 
-            cmbMateria.DataSource = tabla
+
+
+
+        Catch ex As Exception
+
+        End Try
+        Try
+            conexion1.Open()
+
+            Dim consulta2 As String = "Select id_materia, nombre From materias"
+            Dim tabla2 As New DataTable
+            Dim adapter2 As New OleDbDataAdapter(consulta2, conexion1)
+            adapter2.Fill(tabla2)
+
+            cmbMateria.DataSource = tabla2
             cmbMateria.DisplayMember = "nombre"
             cmbMateria.ValueMember = "id_materia"
 

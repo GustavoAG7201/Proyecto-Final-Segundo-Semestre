@@ -57,8 +57,8 @@ Partial Class frmAgregarCalificaciones
         '
         'cmbMateria
         '
+        Me.cmbMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbMateria.FormattingEnabled = True
-        Me.cmbMateria.Items.AddRange(New Object() {"Algebra ", "Calculo diferencial", "Biologia ", "Quimica I", "Quimica II", "Fisica", "Probabilidad y estadistica", "Ingles I", "Ingles II", "Etica", "Filosofia"})
         Me.cmbMateria.Location = New System.Drawing.Point(17, 70)
         Me.cmbMateria.Name = "cmbMateria"
         Me.cmbMateria.Size = New System.Drawing.Size(178, 21)

@@ -1,7 +1,26 @@
 ﻿Imports System.Data.OleDb
 Public Class frmAgregarCalificaciones
     Private Sub frmAgregarCalificaciones_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Gustavo Alonso Gutierrez'
 
+        Try
+            conexion1.Open()
+
+            Dim consulta As String = "Select id_materia, nombre From materias"
+            Dim tabla As New DataTable
+            Dim adapter As New OleDbDataAdapter(consulta, conexion1)
+            adapter.Fill(tabla)
+
+            cmbMateria.DataSource = tabla
+            cmbMateria.DisplayMember = "nombre"
+            cmbMateria.ValueMember = "id_materia"
+            conexion1.Close()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            conexion1.Close()
+
+        End Try
     End Sub
 
     Private Sub btnAgregarCalificacion_Click(sender As Object, e As EventArgs) Handles btnAgregarCalificacion.Click
@@ -13,7 +32,7 @@ Public Class frmAgregarCalificaciones
 
         Dim consulta As String
 
-        If materia = "" Or parcial = "" Then
+        If materia = "" Or parcial = "" Or promedio = "" Then
             MsgBox("Por favor, llena el formulario", MsgBoxStyle.Critical, "Aviso")
         End If
 

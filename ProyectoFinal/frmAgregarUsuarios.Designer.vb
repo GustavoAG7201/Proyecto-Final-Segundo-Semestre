@@ -183,7 +183,6 @@ Partial Class frmAgregarUsuarios
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmAgregarUsuarios"
-        Me.Text = "Agregar Usuarios"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

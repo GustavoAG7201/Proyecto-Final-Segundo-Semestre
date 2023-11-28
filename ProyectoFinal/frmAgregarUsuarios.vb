@@ -34,9 +34,12 @@ Public Class frmAgregarUsuarios
             MsgBox("Tu informacion se guardo correctamente!", MsgBoxStyle.Information, "Aviso")
             Me.Close()
 
+            conexion1.Close()
+
         Catch ex As Exception
             MsgBox(ex.Message)
             Me.Close()
+            conexion1.Close()
         End Try
     End Sub
 

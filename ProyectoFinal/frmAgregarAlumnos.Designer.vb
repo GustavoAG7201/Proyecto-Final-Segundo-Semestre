@@ -184,7 +184,7 @@ Partial Class frmAgregarAlumnos
         'cmbEspecialidadAlumno
         '
         Me.cmbEspecialidadAlumno.FormattingEnabled = True
-        Me.cmbEspecialidadAlumno.Items.AddRange(New Object() {"2019-2022"})
+        Me.cmbEspecialidadAlumno.Items.AddRange(New Object() {"Programacion", "Laboratorio Clinico", "Contabilidad", "Administracion de Recursos Humanos", "Electricidad", "Mecatronica"})
         Me.cmbEspecialidadAlumno.Location = New System.Drawing.Point(258, 243)
         Me.cmbEspecialidadAlumno.Name = "cmbEspecialidadAlumno"
         Me.cmbEspecialidadAlumno.Size = New System.Drawing.Size(121, 21)

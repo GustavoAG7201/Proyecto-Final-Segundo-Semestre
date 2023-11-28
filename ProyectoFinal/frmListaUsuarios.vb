@@ -17,9 +17,11 @@ Public Class frmListaUsuarios
             Dim tabla As New DataTable
             tabla.Load(lectura)
             dgvListaUsuarios.DataSource = tabla
+
             conexion1.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
+
             conexion1.Close()
         End Try
 

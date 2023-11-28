@@ -67,7 +67,7 @@ Partial Class frmAgregarCalificaciones
         'cmbParcial
         '
         Me.cmbParcial.FormattingEnabled = True
-        Me.cmbParcial.Items.AddRange(New Object() {"Algebra ", "Calculo diferencial", "Biologia ", "Quimica I", "Quimica II", "Fisica", "Probabilidad y estadistica", "Ingles I", "Ingles II", "Etica", "Filosofia"})
+        Me.cmbParcial.Items.AddRange(New Object() {"Primero", "Segundo", "Tercero"})
         Me.cmbParcial.Location = New System.Drawing.Point(16, 121)
         Me.cmbParcial.Name = "cmbParcial"
         Me.cmbParcial.Size = New System.Drawing.Size(178, 21)

@@ -82,6 +82,7 @@ Partial Class frmAgregarUsuarios
         Me.txtContrasenaUsuario.Name = "txtContrasenaUsuario"
         Me.txtContrasenaUsuario.Size = New System.Drawing.Size(181, 20)
         Me.txtContrasenaUsuario.TabIndex = 6
+        Me.txtContrasenaUsuario.UseSystemPasswordChar = True
         '
         'Label5
         '

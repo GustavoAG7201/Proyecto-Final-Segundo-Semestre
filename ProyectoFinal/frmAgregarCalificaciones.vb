@@ -1,44 +1,6 @@
 ﻿Imports System.Data.OleDb
 Public Class frmAgregarCalificaciones
 
-
-    Private Sub btnAgregarCalificacion_Click(sender As Object, e As EventArgs) Handles btnAgregarCalificacion.Click
-        'Gustavo Alonso Gutierrez'
-        Dim materia As String = cmbMateria.SelectedValue
-        Dim parcial As String = cmbParcial.SelectedValue
-        Dim promedio As Double = nudPromedio.Value
-
-
-        Dim consulta As String
-
-        If promedio = "0" Then
-            MsgBox("Por favor, llena el formulario", MsgBoxStyle.Critical, "Aviso")
-        End If
-
-        Try
-            conexion1.Open()
-
-            consulta = "INSERT INTO calificaciones (parcial, promedio) VALUES 
-            ('" & parcial & "', '" & promedio & "')"
-
-            Dim comando As New OleDbCommand(consulta, conexion1)
-
-            comando.ExecuteNonQuery()
-            conexion1.Close()
-
-            MsgBox("Tu informacion se guardo correctamente!", MsgBoxStyle.Information, "Aviso")
-            Me.Close()
-
-            conexion1.Close()
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-            Me.Close()
-            conexion1.Close()
-        End Try
-    End Sub
-
-
     Private Sub frmAgregarCalificaciones_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Gustavo Alonso Gutierrez'
 
@@ -64,5 +26,44 @@ Public Class frmAgregarCalificaciones
 
         End Try
     End Sub
+
+    Private Sub btnAgregarCalificacion_Click(sender As Object, e As EventArgs) Handles btnAgregarCalificacion.Click
+        'Gustavo Alonso Gutierrez'
+        Dim materia As Integer = CInt(cmbMateria.SelectedValue)
+        Dim parcial As String = cmbParcial.SelectedItem.ToString
+        Dim promedio As Integer = nudPromedio.Value
+
+
+        Dim consulta As String
+
+        If promedio = "0" Then
+            MsgBox("Por favor, llena el formulario", MsgBoxStyle.Critical, "Aviso")
+        End If
+
+        Try
+            conexion1.Open()
+
+            consulta = "INSERT INTO calificaciones (parcial, promedio, id_materia) VALUES 
+            ('" & parcial & "', " & promedio & ", " & materia & ")"
+
+            Dim comando As New OleDbCommand(consulta, conexion1)
+
+            comando.ExecuteNonQuery()
+            conexion1.Close()
+
+            MsgBox("Tu informacion se guardo correctamente!", MsgBoxStyle.Information, "Aviso")
+            Me.Close()
+
+            conexion1.Close()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Me.Close()
+            conexion1.Close()
+        End Try
+    End Sub
+
+
+
 
 End Class

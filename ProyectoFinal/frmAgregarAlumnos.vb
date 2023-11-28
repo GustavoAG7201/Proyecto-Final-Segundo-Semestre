@@ -13,11 +13,12 @@ Public Class frmAgregarAlumnos
         Dim nombreAlumno As String = txtNombreAlumno.Text
         Dim apellidoPaterno As String = txtApellidoPaterno.Text
         Dim apellidoMarterno As String = txtApellidoMaterno.Text
-        Dim generacion As String = cmbGeneracionAlumno.SelectedValue
+        Dim generacion As String = cmbGeneracionAlumno.SelectedItem.ToString
         Dim fechaNacimiento As Date = dtpNacimientoAlumno.Value
         Dim matriculaEscolar As String = txtMatriculaAlumno.Text
-        Dim semestre As Integer = nudSemestreAlumno.Value
-        Dim especialidad As String = cmbEspecialidadAlumno.SelectedValue
+        Dim semestre As Integer = CInt(nudSemestreAlumno.Value)
+        Dim especialidad As String = cmbEspecialidadAlumno.SelectedItem.ToString
+
 
         Dim consulta As String
 
@@ -37,8 +38,8 @@ Public Class frmAgregarAlumnos
         Try
             conexion1.Open()
 
-            consulta = "INSERT INTO alumnos (nombre, materno, paterno, fecha_nacimiento, generacion, semestre, matricula, especialidad) VALUES 
-            ('" & nombreAlumno & "', '" & apellidoMarterno & "', '" & apellidoPaterno & "', '" & generacion & "', '" & fechaNacimiento & "', '" & matriculaEscolar & "', '" & semestre & "', '" & especialidad & "' )"
+            consulta = "INSERT INTO alumnos (nombre, paterno, materno, fecha_nacimiento, generacion, semestre, matricula, especialidad) VALUES 
+            ('" & nombreAlumno & "', '" & apellidoPaterno & "', '" & apellidoMarterno & "', '" & fechaNacimiento & "', '" & generacion & "', " & semestre & ", '" & matriculaEscolar & "', '" & especialidad & "' )"
 
             Dim comando As New OleDbCommand(consulta, conexion1)
 

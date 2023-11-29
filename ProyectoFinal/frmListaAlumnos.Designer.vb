@@ -32,14 +32,14 @@ Partial Class frmListaAlumnos
         Me.dgvListaAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListaAlumnos.Location = New System.Drawing.Point(12, 12)
         Me.dgvListaAlumnos.Name = "dgvListaAlumnos"
-        Me.dgvListaAlumnos.Size = New System.Drawing.Size(568, 307)
+        Me.dgvListaAlumnos.Size = New System.Drawing.Size(1077, 307)
         Me.dgvListaAlumnos.TabIndex = 0
         '
         'frmListaAlumnos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(592, 331)
+        Me.ClientSize = New System.Drawing.Size(1101, 331)
         Me.Controls.Add(Me.dgvListaAlumnos)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmListaAlumnos"

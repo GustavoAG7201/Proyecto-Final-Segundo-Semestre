@@ -3,6 +3,7 @@ Public Class frmAgregarCalificaciones
 
     Private Sub frmAgregarCalificaciones_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Gustavo Alonso Gutierrez'
+        'Relacion entre calificaciones y alumnos'
 
         Try
             conexion1.Open()
@@ -12,12 +13,19 @@ Public Class frmAgregarCalificaciones
             Dim adapter1 As New OleDbDataAdapter(consulta1, conexion1)
             adapter1.Fill(tabla1)
 
+            cmbAlumno.DataSource = tabla1
+            cmbAlumno.DisplayMember = "nombre"
+            cmbAlumno.ValueMember = "id_alumnos"
 
-
+            conexion1.Close()
 
         Catch ex As Exception
-
+            MsgBox(ex.Message)
+            conexion1.Close()
         End Try
+
+
+        'Relacion entre calificaciones y materias'
         Try
             conexion1.Open()
 
@@ -34,7 +42,6 @@ Public Class frmAgregarCalificaciones
 
         Catch ex As Exception
             MsgBox(ex.Message)
-
             conexion1.Close()
 
 
@@ -43,7 +50,8 @@ Public Class frmAgregarCalificaciones
 
     Private Sub btnAgregarCalificacion_Click(sender As Object, e As EventArgs) Handles btnAgregarCalificacion.Click
         'Gustavo Alonso Gutierrez'
-        Dim materia As Integer = CInt(cmbMateria.SelectedValue)
+        Dim materia As String = CInt(cmbMateria.SelectedValue)
+        Dim alumno As String = CInt(cmbAlumno.SelectedValue)
         Dim parcial As String = cmbParcial.SelectedItem.ToString
         Dim promedio As Integer = nudPromedio.Value
 
@@ -51,14 +59,13 @@ Public Class frmAgregarCalificaciones
         Dim consulta As String
 
         If promedio = "0" Then
-            MsgBox("Por favor, llena el formulario", MsgBoxStyle.Critical, "Aviso")
+            MsgBox("Por favor, llena el promedio del alumno", MsgBoxStyle.Critical, "Aviso")
         End If
 
-        Try
+        Try 'EL ERROR ES A PARTIR DE AQUI'
             conexion1.Open()
 
-            consulta = "INSERT INTO calificaciones (parcial, promedio, id_materia) VALUES 
-            ('" & parcial & "', " & promedio & ", " & materia & ")"
+            consulta = "INSERT INTO calificaciones (id_materia, id_alumnos, parcial, promedio) VALUES (" & materia & ", " & alumno & ", '" & parcial & "', " & promedio & ")"
 
             Dim comando As New OleDbCommand(consulta, conexion1)
 

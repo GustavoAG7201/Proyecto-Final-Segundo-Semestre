@@ -24,6 +24,7 @@ Partial Class frmListaAlumnos
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmListaAlumnos))
         Me.dgvListaAlumnos = New System.Windows.Forms.DataGridView()
+        Me.btnEliminarAlumnos = New System.Windows.Forms.Button()
         CType(Me.dgvListaAlumnos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -35,11 +36,21 @@ Partial Class frmListaAlumnos
         Me.dgvListaAlumnos.Size = New System.Drawing.Size(1077, 307)
         Me.dgvListaAlumnos.TabIndex = 0
         '
+        'btnEliminarAlumnos
+        '
+        Me.btnEliminarAlumnos.Location = New System.Drawing.Point(523, 340)
+        Me.btnEliminarAlumnos.Name = "btnEliminarAlumnos"
+        Me.btnEliminarAlumnos.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminarAlumnos.TabIndex = 1
+        Me.btnEliminarAlumnos.Text = "Eliminar"
+        Me.btnEliminarAlumnos.UseVisualStyleBackColor = True
+        '
         'frmListaAlumnos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1101, 331)
+        Me.ClientSize = New System.Drawing.Size(1101, 375)
+        Me.Controls.Add(Me.btnEliminarAlumnos)
         Me.Controls.Add(Me.dgvListaAlumnos)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmListaAlumnos"
@@ -50,4 +61,5 @@ Partial Class frmListaAlumnos
     End Sub
 
     Friend WithEvents dgvListaAlumnos As DataGridView
+    Friend WithEvents btnEliminarAlumnos As Button
 End Class

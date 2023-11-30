@@ -24,6 +24,7 @@ Partial Class frmListaUsuarios
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmListaUsuarios))
         Me.dgvListaUsuarios = New System.Windows.Forms.DataGridView()
+        Me.btnEliminarUsuario = New System.Windows.Forms.Button()
         CType(Me.dgvListaUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -32,14 +33,24 @@ Partial Class frmListaUsuarios
         Me.dgvListaUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvListaUsuarios.Location = New System.Drawing.Point(12, 12)
         Me.dgvListaUsuarios.Name = "dgvListaUsuarios"
-        Me.dgvListaUsuarios.Size = New System.Drawing.Size(606, 311)
+        Me.dgvListaUsuarios.Size = New System.Drawing.Size(606, 272)
         Me.dgvListaUsuarios.TabIndex = 0
+        '
+        'btnEliminarUsuario
+        '
+        Me.btnEliminarUsuario.Location = New System.Drawing.Point(274, 300)
+        Me.btnEliminarUsuario.Name = "btnEliminarUsuario"
+        Me.btnEliminarUsuario.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminarUsuario.TabIndex = 1
+        Me.btnEliminarUsuario.Text = "Eliminar"
+        Me.btnEliminarUsuario.UseVisualStyleBackColor = True
         '
         'frmListaUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(630, 335)
+        Me.Controls.Add(Me.btnEliminarUsuario)
         Me.Controls.Add(Me.dgvListaUsuarios)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmListaUsuarios"
@@ -50,4 +61,5 @@ Partial Class frmListaUsuarios
     End Sub
 
     Friend WithEvents dgvListaUsuarios As DataGridView
+    Friend WithEvents btnEliminarUsuario As Button
 End Class

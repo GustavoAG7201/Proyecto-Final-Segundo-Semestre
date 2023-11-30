@@ -27,4 +27,30 @@ Public Class frmListaUsuarios
 
     End Sub
 
+    Private Sub btnEliminarUsuario_Click(sender As Object, e As EventArgs) Handles btnEliminarUsuario.Click
+        'Gusatavo Alonso Gutierrez'
+
+        Dim seleccionar_fila As Integer = dgvListaUsuarios.CurrentRow.Cells(0).Value
+        Dim respuesta As Byte
+
+        respuesta = MsgBox("¿Estas seguro que quieres eliminar este registro?", MsgBoxStyle.YesNo, "Eliminacion de registros")
+
+        If respuesta = 6 Then
+            Try
+                conexion1.Open()
+                Dim consulta As String = "DELETE FROM usuarios WHERE id_usuarios = " & seleccionar_fila & ""
+
+                Dim comando As New OleDbCommand(consulta, conexion1)
+                comando.ExecuteNonQuery()
+                conexion1.Close()
+                MsgBox("El registro se ha eliminado correctamente!", vbInformation, "Eliminacion de registros")
+
+                listaUsuario()
+                Me.dgvListaUsuarios.CurrentRow.Selected = False
+            Catch ex As Exception
+                conexion1.Close()
+                MsgBox(ex.Message)
+            End Try
+        End If
+    End Sub
 End Class

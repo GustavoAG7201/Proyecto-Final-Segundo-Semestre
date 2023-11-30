@@ -27,4 +27,7 @@ Public Class frmListaAlumnos
 
     End Sub
 
+    Private Sub btnEliminarAlumnos_Click(sender As Object, e As EventArgs) Handles btnEliminarAlumnos.Click
+        'Gustavo Alonso Gutierrez'
+    End Sub
 End Class

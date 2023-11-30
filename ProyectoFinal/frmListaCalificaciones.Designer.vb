@@ -24,6 +24,7 @@ Partial Class frmListaCalificaciones
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmListaCalificaciones))
         Me.dgvListaCalificaciones = New System.Windows.Forms.DataGridView()
+        Me.btnEliminarCalificaciones = New System.Windows.Forms.Button()
         CType(Me.dgvListaCalificaciones, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -35,11 +36,21 @@ Partial Class frmListaCalificaciones
         Me.dgvListaCalificaciones.Size = New System.Drawing.Size(828, 301)
         Me.dgvListaCalificaciones.TabIndex = 0
         '
+        'btnEliminarCalificaciones
+        '
+        Me.btnEliminarCalificaciones.Location = New System.Drawing.Point(404, 332)
+        Me.btnEliminarCalificaciones.Name = "btnEliminarCalificaciones"
+        Me.btnEliminarCalificaciones.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminarCalificaciones.TabIndex = 1
+        Me.btnEliminarCalificaciones.Text = "Eliminar"
+        Me.btnEliminarCalificaciones.UseVisualStyleBackColor = True
+        '
         'frmListaCalificaciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(852, 325)
+        Me.ClientSize = New System.Drawing.Size(852, 367)
+        Me.Controls.Add(Me.btnEliminarCalificaciones)
         Me.Controls.Add(Me.dgvListaCalificaciones)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmListaCalificaciones"
@@ -50,4 +61,5 @@ Partial Class frmListaCalificaciones
     End Sub
 
     Friend WithEvents dgvListaCalificaciones As DataGridView
+    Friend WithEvents btnEliminarCalificaciones As Button
 End Class

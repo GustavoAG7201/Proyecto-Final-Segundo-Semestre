@@ -24,6 +24,7 @@ Partial Class frmListaMaterias
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmListaMaterias))
         Me.dgvListaMaterias = New System.Windows.Forms.DataGridView()
+        Me.btnEliminarMaterias = New System.Windows.Forms.Button()
         CType(Me.dgvListaMaterias, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -35,11 +36,21 @@ Partial Class frmListaMaterias
         Me.dgvListaMaterias.Size = New System.Drawing.Size(553, 293)
         Me.dgvListaMaterias.TabIndex = 0
         '
+        'btnEliminarMaterias
+        '
+        Me.btnEliminarMaterias.Location = New System.Drawing.Point(256, 321)
+        Me.btnEliminarMaterias.Name = "btnEliminarMaterias"
+        Me.btnEliminarMaterias.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminarMaterias.TabIndex = 1
+        Me.btnEliminarMaterias.Text = "Eliminar"
+        Me.btnEliminarMaterias.UseVisualStyleBackColor = True
+        '
         'frmListaMaterias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(577, 317)
+        Me.ClientSize = New System.Drawing.Size(577, 356)
+        Me.Controls.Add(Me.btnEliminarMaterias)
         Me.Controls.Add(Me.dgvListaMaterias)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmListaMaterias"
@@ -50,4 +61,5 @@ Partial Class frmListaMaterias
     End Sub
 
     Friend WithEvents dgvListaMaterias As DataGridView
+    Friend WithEvents btnEliminarMaterias As Button
 End Class

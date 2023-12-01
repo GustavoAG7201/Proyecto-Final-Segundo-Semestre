@@ -43,7 +43,8 @@ Partial Class frmAgregarUsuarios
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(102, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(220, 24)
         Me.Label1.TabIndex = 0
@@ -53,7 +54,8 @@ Partial Class frmAgregarUsuarios
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(20, 48)
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(12, 48)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(57, 20)
         Me.Label3.TabIndex = 2
@@ -63,6 +65,7 @@ Partial Class frmAgregarUsuarios
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(230, 48)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(92, 20)
@@ -71,7 +74,7 @@ Partial Class frmAgregarUsuarios
         '
         'txtCorreoUsuario
         '
-        Me.txtCorreoUsuario.Location = New System.Drawing.Point(24, 71)
+        Me.txtCorreoUsuario.Location = New System.Drawing.Point(16, 71)
         Me.txtCorreoUsuario.Name = "txtCorreoUsuario"
         Me.txtCorreoUsuario.Size = New System.Drawing.Size(181, 20)
         Me.txtCorreoUsuario.TabIndex = 5
@@ -88,7 +91,8 @@ Partial Class frmAgregarUsuarios
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(20, 107)
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(12, 106)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(149, 24)
         Me.Label5.TabIndex = 7
@@ -98,7 +102,8 @@ Partial Class frmAgregarUsuarios
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(20, 147)
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(12, 147)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(65, 20)
         Me.Label6.TabIndex = 8
@@ -106,7 +111,7 @@ Partial Class frmAgregarUsuarios
         '
         'txtNombreUsuario
         '
-        Me.txtNombreUsuario.Location = New System.Drawing.Point(24, 170)
+        Me.txtNombreUsuario.Location = New System.Drawing.Point(16, 170)
         Me.txtNombreUsuario.Name = "txtNombreUsuario"
         Me.txtNombreUsuario.Size = New System.Drawing.Size(181, 20)
         Me.txtNombreUsuario.TabIndex = 9
@@ -115,6 +120,7 @@ Partial Class frmAgregarUsuarios
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(12, 203)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(125, 20)
@@ -132,6 +138,7 @@ Partial Class frmAgregarUsuarios
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(230, 203)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(128, 20)
@@ -147,7 +154,7 @@ Partial Class frmAgregarUsuarios
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(24, 296)
+        Me.btnCancelar.Location = New System.Drawing.Point(16, 296)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
         Me.btnCancelar.TabIndex = 14
@@ -167,6 +174,7 @@ Partial Class frmAgregarUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(36, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(444, 327)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnCancelar)
@@ -184,6 +192,7 @@ Partial Class frmAgregarUsuarios
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmAgregarUsuarios"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

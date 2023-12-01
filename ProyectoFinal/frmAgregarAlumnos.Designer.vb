@@ -49,6 +49,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(156, 24)
@@ -59,6 +60,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(12, 47)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(65, 20)
@@ -76,6 +78,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(254, 47)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(125, 20)
@@ -93,6 +96,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(12, 108)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(128, 20)
@@ -117,6 +121,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(12, 164)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(157, 20)
@@ -127,6 +132,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(254, 108)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(92, 20)
@@ -144,7 +150,7 @@ Partial Class frmAgregarAlumnos
         '
         'nudSemestreAlumno
         '
-        Me.nudSemestreAlumno.Location = New System.Drawing.Point(12, 244)
+        Me.nudSemestreAlumno.Location = New System.Drawing.Point(16, 243)
         Me.nudSemestreAlumno.Maximum = New Decimal(New Integer() {6, 0, 0, 0})
         Me.nudSemestreAlumno.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nudSemestreAlumno.Name = "nudSemestreAlumno"
@@ -156,6 +162,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(12, 221)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(78, 20)
@@ -167,6 +174,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(254, 164)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(73, 20)
@@ -194,6 +202,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
         Me.Label9.Location = New System.Drawing.Point(254, 221)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(99, 20)
@@ -223,6 +232,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(36, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(452, 346)
         Me.Controls.Add(Me.btnGuardarAlumno)
         Me.Controls.Add(Me.btnCancelarAlumno)
@@ -245,6 +255,7 @@ Partial Class frmAgregarAlumnos
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmAgregarAlumnos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Agregar Alumnos"
         CType(Me.nudSemestreAlumno, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

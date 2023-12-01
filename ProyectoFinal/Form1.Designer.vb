@@ -45,7 +45,7 @@ Partial Class frmMenu
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.AlumnosToolStripMenuItem, Me.MateriasToolStripMenuItem, Me.CalificacionesToolStripMenuItem, Me.AcercaDeToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(627, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(688, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -59,13 +59,13 @@ Partial Class frmMenu
         'AgregarToolStripMenuItem
         '
         Me.AgregarToolStripMenuItem.Name = "AgregarToolStripMenuItem"
-        Me.AgregarToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.AgregarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AgregarToolStripMenuItem.Text = "Agregar"
         '
         'ListaToolStripMenuItem
         '
         Me.ListaToolStripMenuItem.Name = "ListaToolStripMenuItem"
-        Me.ListaToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.ListaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ListaToolStripMenuItem.Text = "Lista"
         '
         'AlumnosToolStripMenuItem
@@ -78,13 +78,13 @@ Partial Class frmMenu
         'AgregarToolStripMenuItem1
         '
         Me.AgregarToolStripMenuItem1.Name = "AgregarToolStripMenuItem1"
-        Me.AgregarToolStripMenuItem1.Size = New System.Drawing.Size(116, 22)
+        Me.AgregarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.AgregarToolStripMenuItem1.Text = "Agregar"
         '
         'ListaToolStripMenuItem1
         '
         Me.ListaToolStripMenuItem1.Name = "ListaToolStripMenuItem1"
-        Me.ListaToolStripMenuItem1.Size = New System.Drawing.Size(116, 22)
+        Me.ListaToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.ListaToolStripMenuItem1.Text = "Lista"
         '
         'MateriasToolStripMenuItem
@@ -116,13 +116,13 @@ Partial Class frmMenu
         'AgregarToolStripMenuItem3
         '
         Me.AgregarToolStripMenuItem3.Name = "AgregarToolStripMenuItem3"
-        Me.AgregarToolStripMenuItem3.Size = New System.Drawing.Size(116, 22)
+        Me.AgregarToolStripMenuItem3.Size = New System.Drawing.Size(180, 22)
         Me.AgregarToolStripMenuItem3.Text = "Agregar"
         '
         'ListaToolStripMenuItem3
         '
         Me.ListaToolStripMenuItem3.Name = "ListaToolStripMenuItem3"
-        Me.ListaToolStripMenuItem3.Size = New System.Drawing.Size(116, 22)
+        Me.ListaToolStripMenuItem3.Size = New System.Drawing.Size(180, 22)
         Me.ListaToolStripMenuItem3.Text = "Lista"
         '
         'AcercaDeToolStripMenuItem
@@ -135,12 +135,14 @@ Partial Class frmMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(627, 336)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(688, 405)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

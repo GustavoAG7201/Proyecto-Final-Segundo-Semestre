@@ -36,7 +36,8 @@ Partial Class frmAgregarMaterias
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(32, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(169, 24)
         Me.Label1.TabIndex = 0
@@ -46,7 +47,8 @@ Partial Class frmAgregarMaterias
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 53)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(8, 53)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(65, 20)
         Me.Label2.TabIndex = 1
@@ -54,7 +56,7 @@ Partial Class frmAgregarMaterias
         '
         'txtNombreMateria
         '
-        Me.txtNombreMateria.Location = New System.Drawing.Point(16, 76)
+        Me.txtNombreMateria.Location = New System.Drawing.Point(12, 76)
         Me.txtNombreMateria.Name = "txtNombreMateria"
         Me.txtNombreMateria.Size = New System.Drawing.Size(189, 20)
         Me.txtNombreMateria.TabIndex = 2
@@ -63,7 +65,8 @@ Partial Class frmAgregarMaterias
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 108)
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(8, 108)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(158, 20)
         Me.Label3.TabIndex = 3
@@ -98,6 +101,7 @@ Partial Class frmAgregarMaterias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(36, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(242, 235)
         Me.Controls.Add(Me.btnGuardarMateria)
         Me.Controls.Add(Me.btnCancelarMateria)
@@ -108,6 +112,7 @@ Partial Class frmAgregarMaterias
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmAgregarMaterias"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Agregar Materias"
         Me.ResumeLayout(False)
         Me.PerformLayout()

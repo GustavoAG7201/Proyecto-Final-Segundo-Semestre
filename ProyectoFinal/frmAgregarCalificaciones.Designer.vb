@@ -41,7 +41,8 @@ Partial Class frmAgregarCalificaciones
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(13, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(223, 24)
         Me.Label1.TabIndex = 0
@@ -51,7 +52,8 @@ Partial Class frmAgregarCalificaciones
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 99)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(12, 105)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 20)
         Me.Label2.TabIndex = 1
@@ -79,7 +81,8 @@ Partial Class frmAgregarCalificaciones
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 152)
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(13, 152)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 20)
         Me.Label3.TabIndex = 4
@@ -89,7 +92,8 @@ Partial Class frmAgregarCalificaciones
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(330, 47)
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(393, 90)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(76, 20)
         Me.Label4.TabIndex = 5
@@ -97,7 +101,7 @@ Partial Class frmAgregarCalificaciones
         '
         'nudPromedio
         '
-        Me.nudPromedio.Location = New System.Drawing.Point(311, 99)
+        Me.nudPromedio.Location = New System.Drawing.Point(352, 113)
         Me.nudPromedio.Minimum = New Decimal(New Integer() {50, 0, 0, 0})
         Me.nudPromedio.Name = "nudPromedio"
         Me.nudPromedio.Size = New System.Drawing.Size(120, 20)
@@ -135,7 +139,8 @@ Partial Class frmAgregarCalificaciones
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(18, 52)
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(13, 52)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(63, 20)
         Me.Label5.TabIndex = 10
@@ -145,6 +150,7 @@ Partial Class frmAgregarCalificaciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(36, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(484, 247)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.cmbAlumno)
@@ -159,6 +165,7 @@ Partial Class frmAgregarCalificaciones
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmAgregarCalificaciones"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Agregar Calificaciones"
         CType(Me.nudPromedio, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

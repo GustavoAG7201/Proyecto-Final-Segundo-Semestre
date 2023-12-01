@@ -49,11 +49,13 @@ Partial Class frmListaMaterias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(36, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(577, 356)
         Me.Controls.Add(Me.btnEliminarMaterias)
         Me.Controls.Add(Me.dgvListaMaterias)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmListaMaterias"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lista Materias"
         CType(Me.dgvListaMaterias, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

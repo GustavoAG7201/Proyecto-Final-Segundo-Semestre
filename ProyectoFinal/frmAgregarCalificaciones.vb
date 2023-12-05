@@ -52,6 +52,8 @@ Public Class frmAgregarCalificaciones
         'Gustavo Alonso Gutierrez'
         Dim materia As String = CInt(cmbMateria.SelectedValue)
         Dim alumno As String = CInt(cmbAlumno.SelectedValue)
+
+        'aqui
         Dim parcial As String = cmbParcial.SelectedItem.ToString
         Dim promedio As Integer = nudPromedio.Value
 

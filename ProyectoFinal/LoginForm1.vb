@@ -28,7 +28,7 @@ Public Class frmLogin
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox("Por favor revisa que las credenciales ingresadas sean validas", MsgBoxStyle.Critical, "Aviso")
         Finally
             conexion1.Close()
         End Try

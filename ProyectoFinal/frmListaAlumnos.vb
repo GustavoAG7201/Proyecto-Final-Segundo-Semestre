@@ -20,7 +20,7 @@ Public Class frmListaAlumnos
 
             conexion1.Close()
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox("Error inesperado", MsgBoxStyle.Critical, "Aviso")
 
             conexion1.Close()
         End Try
@@ -49,7 +49,7 @@ Public Class frmListaAlumnos
                 Me.dgvListaAlumnos.CurrentRow.Selected = False
             Catch ex As Exception
                 conexion1.Close()
-                MsgBox(ex.Message)
+                MsgBox("Error inesperado", MsgBoxStyle.Critical, "Aviso")
             End Try
         End If
     End Sub

@@ -33,7 +33,7 @@ Public Class frmAgregarMaterias
 
             conexion1.Close()
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox("Error inesperado", MsgBoxStyle.Critical, "Aviso")
             Me.Close()
             conexion1.Close()
 

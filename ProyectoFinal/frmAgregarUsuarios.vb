@@ -31,7 +31,7 @@ Public Class frmAgregarUsuarios
             comando.ExecuteNonQuery() 'indica que se inserta, actualiza o elimina datos'
             conexion1.Close()
 
-            MsgBox("Tu informacion se guardo correctamente!", MsgBoxStyle.Information, "Aviso")
+            MsgBox("Tu información se guardó correctamente!", MsgBoxStyle.Information, "Aviso")
             Me.Close()
 
             conexion1.Close()
@@ -43,5 +43,9 @@ Public Class frmAgregarUsuarios
         End Try
     End Sub
 
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        'Gustavo Alonso Gutierrez'
 
+        Me.Close()
+    End Sub
 End Class

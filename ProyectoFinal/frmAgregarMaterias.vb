@@ -28,7 +28,7 @@ Public Class frmAgregarMaterias
             conexion1.Close()
 
 
-            MsgBox("Tu informacion se guardo correctamente!", MsgBoxStyle.Information, "Aviso")
+            MsgBox("Tu información se guardó correctamente!", MsgBoxStyle.Information, "Aviso")
             Me.Close()
 
             conexion1.Close()
@@ -43,5 +43,10 @@ Public Class frmAgregarMaterias
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
+    End Sub
+
+    Private Sub btnCancelarMateria_Click(sender As Object, e As EventArgs) Handles btnCancelarMateria.Click
+        'Gustavo Alonso Gutierrez'
+        Me.Close()
     End Sub
 End Class

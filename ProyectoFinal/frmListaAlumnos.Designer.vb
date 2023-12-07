@@ -50,7 +50,7 @@ Partial Class frmListaAlumnos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1101, 375)
+        Me.ClientSize = New System.Drawing.Size(1101, 385)
         Me.Controls.Add(Me.btnEliminarAlumnos)
         Me.Controls.Add(Me.dgvListaAlumnos)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

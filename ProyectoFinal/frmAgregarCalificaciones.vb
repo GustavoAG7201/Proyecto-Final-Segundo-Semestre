@@ -74,7 +74,7 @@ Public Class frmAgregarCalificaciones
             comando.ExecuteNonQuery()
             conexion1.Close()
 
-            MsgBox("Tu informacion se guardo correctamente!", MsgBoxStyle.Information, "Aviso")
+            MsgBox("Tu información se guardó correctamente!", MsgBoxStyle.Information, "Aviso")
             Me.Close()
 
             conexion1.Close()
@@ -86,7 +86,9 @@ Public Class frmAgregarCalificaciones
         End Try
     End Sub
 
+    Private Sub btnCancelarCalificacion_Click(sender As Object, e As EventArgs) Handles btnCancelarCalificacion.Click
+        'Gustavo Alonso Gutierrez'
 
-
-
+        Me.Close()
+    End Sub
 End Class

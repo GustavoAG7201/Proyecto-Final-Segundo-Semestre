@@ -13,24 +13,25 @@ Public Class frmAgregarAlumnos
         Dim nombreAlumno As String = txtNombreAlumno.Text
         Dim apellidoPaterno As String = txtApellidoPaterno.Text
         Dim apellidoMarterno As String = txtApellidoMaterno.Text
-        Dim generacion As String = cmbGeneracionAlumno.SelectedItem.ToString
+        Dim generacion As String = cmbGeneracionAlumno.SelectedItem
         Dim fechaNacimiento As Date = dtpNacimientoAlumno.Value
         Dim matriculaEscolar As String = txtMatriculaAlumno.Text
         Dim semestre As Integer = CInt(nudSemestreAlumno.Value)
-        Dim especialidad As String = cmbEspecialidadAlumno.SelectedItem.ToString
+        Dim especialidad As String = cmbEspecialidadAlumno.SelectedItem
 
 
         Dim consulta As String
 
-        If String.IsNullOrEmpty(nombreAlumno) And
-            String.IsNullOrEmpty(apellidoPaterno) And
-            String.IsNullOrEmpty(apellidoMarterno) And
-            generacion Is Nothing And
-            fechaNacimiento = DateTime.MinValue And
-            String.IsNullOrEmpty(matriculaEscolar) And
-            semestre = Nothing And
+        If String.IsNullOrEmpty(nombreAlumno) Or
+            String.IsNullOrEmpty(apellidoPaterno) Or
+            String.IsNullOrEmpty(apellidoMarterno) Or
+            String.IsNullOrEmpty(generacion) Or
+            fechaNacimiento = DateTime.MinValue Or
+            String.IsNullOrEmpty(matriculaEscolar) Or
+            semestre = 0 Or
             String.IsNullOrEmpty(especialidad) Then
             MsgBox("Por favor, llena el formulario", MsgBoxStyle.Critical, "Aviso")
+            Return ' Salir del método si los campos están vacíos
         End If
 
 
@@ -46,7 +47,7 @@ Public Class frmAgregarAlumnos
             comando.ExecuteNonQuery() 'indica que se inserta, actualiza o elimina datos'
             conexion1.Close()
 
-            MsgBox("Tu informacion se guardo correctamente!", MsgBoxStyle.Information, "Aviso")
+            MsgBox("Tu información se guardó correctamente!", MsgBoxStyle.Information, "Aviso")
             Me.Close()
 
             conexion1.Close()
@@ -56,5 +57,11 @@ Public Class frmAgregarAlumnos
             conexion1.Close()
         End Try
 
+    End Sub
+
+    Private Sub btnCancelarAlumno_Click(sender As Object, e As EventArgs) Handles btnCancelarAlumno.Click
+        'Gustavo Alonso Gutierrez'
+
+        Me.Close()
     End Sub
 End Class

@@ -92,7 +92,7 @@ Partial Class frmAgregarUsuarios
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(12, 106)
+        Me.Label5.Location = New System.Drawing.Point(142, 124)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(149, 24)
         Me.Label5.TabIndex = 7
@@ -103,7 +103,7 @@ Partial Class frmAgregarUsuarios
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(12, 147)
+        Me.Label6.Location = New System.Drawing.Point(12, 163)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(65, 20)
         Me.Label6.TabIndex = 8
@@ -111,7 +111,7 @@ Partial Class frmAgregarUsuarios
         '
         'txtNombreUsuario
         '
-        Me.txtNombreUsuario.Location = New System.Drawing.Point(16, 170)
+        Me.txtNombreUsuario.Location = New System.Drawing.Point(12, 186)
         Me.txtNombreUsuario.Name = "txtNombreUsuario"
         Me.txtNombreUsuario.Size = New System.Drawing.Size(181, 20)
         Me.txtNombreUsuario.TabIndex = 9
@@ -121,7 +121,7 @@ Partial Class frmAgregarUsuarios
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(12, 203)
+        Me.Label7.Location = New System.Drawing.Point(12, 226)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(125, 20)
         Me.Label7.TabIndex = 10
@@ -129,7 +129,7 @@ Partial Class frmAgregarUsuarios
         '
         'txtApellidoPaterno
         '
-        Me.txtApellidoPaterno.Location = New System.Drawing.Point(16, 235)
+        Me.txtApellidoPaterno.Location = New System.Drawing.Point(16, 249)
         Me.txtApellidoPaterno.Name = "txtApellidoPaterno"
         Me.txtApellidoPaterno.Size = New System.Drawing.Size(181, 20)
         Me.txtApellidoPaterno.TabIndex = 11
@@ -139,7 +139,7 @@ Partial Class frmAgregarUsuarios
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(230, 203)
+        Me.Label8.Location = New System.Drawing.Point(230, 163)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(128, 20)
         Me.Label8.TabIndex = 12
@@ -147,7 +147,7 @@ Partial Class frmAgregarUsuarios
         '
         'txtApellidoMaterno
         '
-        Me.txtApellidoMaterno.Location = New System.Drawing.Point(234, 235)
+        Me.txtApellidoMaterno.Location = New System.Drawing.Point(234, 186)
         Me.txtApellidoMaterno.Name = "txtApellidoMaterno"
         Me.txtApellidoMaterno.Size = New System.Drawing.Size(181, 20)
         Me.txtApellidoMaterno.TabIndex = 13
@@ -175,7 +175,7 @@ Partial Class frmAgregarUsuarios
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(444, 327)
+        Me.ClientSize = New System.Drawing.Size(444, 333)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.txtApellidoMaterno)

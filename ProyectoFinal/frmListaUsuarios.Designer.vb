@@ -50,7 +50,7 @@ Partial Class frmListaUsuarios
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(630, 335)
+        Me.ClientSize = New System.Drawing.Size(630, 348)
         Me.Controls.Add(Me.btnEliminarUsuario)
         Me.Controls.Add(Me.dgvListaUsuarios)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

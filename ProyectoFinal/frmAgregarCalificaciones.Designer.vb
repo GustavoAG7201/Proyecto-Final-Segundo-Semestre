@@ -53,7 +53,7 @@ Partial Class frmAgregarCalificaciones
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(12, 105)
+        Me.Label2.Location = New System.Drawing.Point(277, 52)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 20)
         Me.Label2.TabIndex = 1
@@ -63,7 +63,7 @@ Partial Class frmAgregarCalificaciones
         '
         Me.cmbMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbMateria.FormattingEnabled = True
-        Me.cmbMateria.Location = New System.Drawing.Point(16, 128)
+        Me.cmbMateria.Location = New System.Drawing.Point(281, 75)
         Me.cmbMateria.Name = "cmbMateria"
         Me.cmbMateria.Size = New System.Drawing.Size(178, 21)
         Me.cmbMateria.TabIndex = 2
@@ -72,7 +72,7 @@ Partial Class frmAgregarCalificaciones
         '
         Me.cmbParcial.FormattingEnabled = True
         Me.cmbParcial.Items.AddRange(New Object() {"Primero", "Segundo", "Tercero"})
-        Me.cmbParcial.Location = New System.Drawing.Point(17, 175)
+        Me.cmbParcial.Location = New System.Drawing.Point(17, 128)
         Me.cmbParcial.Name = "cmbParcial"
         Me.cmbParcial.Size = New System.Drawing.Size(178, 21)
         Me.cmbParcial.TabIndex = 3
@@ -82,7 +82,7 @@ Partial Class frmAgregarCalificaciones
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(13, 152)
+        Me.Label3.Location = New System.Drawing.Point(12, 105)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 20)
         Me.Label3.TabIndex = 4
@@ -93,7 +93,7 @@ Partial Class frmAgregarCalificaciones
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(393, 90)
+        Me.Label4.Location = New System.Drawing.Point(277, 105)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(76, 20)
         Me.Label4.TabIndex = 5
@@ -101,16 +101,16 @@ Partial Class frmAgregarCalificaciones
         '
         'nudPromedio
         '
-        Me.nudPromedio.Location = New System.Drawing.Point(352, 113)
+        Me.nudPromedio.Location = New System.Drawing.Point(281, 128)
         Me.nudPromedio.Minimum = New Decimal(New Integer() {50, 0, 0, 0})
         Me.nudPromedio.Name = "nudPromedio"
-        Me.nudPromedio.Size = New System.Drawing.Size(120, 20)
+        Me.nudPromedio.Size = New System.Drawing.Size(178, 20)
         Me.nudPromedio.TabIndex = 6
         Me.nudPromedio.Value = New Decimal(New Integer() {50, 0, 0, 0})
         '
         'btnCancelarCalificacion
         '
-        Me.btnCancelarCalificacion.Location = New System.Drawing.Point(16, 212)
+        Me.btnCancelarCalificacion.Location = New System.Drawing.Point(16, 181)
         Me.btnCancelarCalificacion.Name = "btnCancelarCalificacion"
         Me.btnCancelarCalificacion.Size = New System.Drawing.Size(75, 23)
         Me.btnCancelarCalificacion.TabIndex = 7
@@ -119,7 +119,7 @@ Partial Class frmAgregarCalificaciones
         '
         'btnAgregarCalificacion
         '
-        Me.btnAgregarCalificacion.Location = New System.Drawing.Point(397, 212)
+        Me.btnAgregarCalificacion.Location = New System.Drawing.Point(397, 181)
         Me.btnAgregarCalificacion.Name = "btnAgregarCalificacion"
         Me.btnAgregarCalificacion.Size = New System.Drawing.Size(75, 23)
         Me.btnAgregarCalificacion.TabIndex = 8
@@ -151,7 +151,7 @@ Partial Class frmAgregarCalificaciones
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(484, 247)
+        Me.ClientSize = New System.Drawing.Size(484, 225)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.cmbAlumno)
         Me.Controls.Add(Me.btnAgregarCalificacion)

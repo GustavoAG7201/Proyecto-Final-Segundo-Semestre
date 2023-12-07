@@ -71,7 +71,7 @@ Partial Class frmAgregarAlumnos
         '
         Me.txtNombreAlumno.Location = New System.Drawing.Point(16, 70)
         Me.txtNombreAlumno.Name = "txtNombreAlumno"
-        Me.txtNombreAlumno.Size = New System.Drawing.Size(181, 20)
+        Me.txtNombreAlumno.Size = New System.Drawing.Size(200, 20)
         Me.txtNombreAlumno.TabIndex = 10
         '
         'Label2
@@ -105,9 +105,9 @@ Partial Class frmAgregarAlumnos
         '
         'txtApellidoMaterno
         '
-        Me.txtApellidoMaterno.Location = New System.Drawing.Point(16, 141)
+        Me.txtApellidoMaterno.Location = New System.Drawing.Point(16, 132)
         Me.txtApellidoMaterno.Name = "txtApellidoMaterno"
-        Me.txtApellidoMaterno.Size = New System.Drawing.Size(181, 20)
+        Me.txtApellidoMaterno.Size = New System.Drawing.Size(200, 20)
         Me.txtApellidoMaterno.TabIndex = 14
         '
         'dtpNacimientoAlumno
@@ -137,7 +137,7 @@ Partial Class frmAgregarAlumnos
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(92, 20)
         Me.Label5.TabIndex = 17
-        Me.Label5.Text = "Generacion"
+        Me.Label5.Text = "Generación"
         '
         'cmbGeneracionAlumno
         '
@@ -145,7 +145,7 @@ Partial Class frmAgregarAlumnos
         Me.cmbGeneracionAlumno.Items.AddRange(New Object() {"2019-2022"})
         Me.cmbGeneracionAlumno.Location = New System.Drawing.Point(258, 131)
         Me.cmbGeneracionAlumno.Name = "cmbGeneracionAlumno"
-        Me.cmbGeneracionAlumno.Size = New System.Drawing.Size(121, 21)
+        Me.cmbGeneracionAlumno.Size = New System.Drawing.Size(181, 21)
         Me.cmbGeneracionAlumno.TabIndex = 18
         '
         'nudSemestreAlumno
@@ -154,7 +154,7 @@ Partial Class frmAgregarAlumnos
         Me.nudSemestreAlumno.Maximum = New Decimal(New Integer() {6, 0, 0, 0})
         Me.nudSemestreAlumno.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nudSemestreAlumno.Name = "nudSemestreAlumno"
-        Me.nudSemestreAlumno.Size = New System.Drawing.Size(120, 20)
+        Me.nudSemestreAlumno.Size = New System.Drawing.Size(200, 20)
         Me.nudSemestreAlumno.TabIndex = 19
         Me.nudSemestreAlumno.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
@@ -180,13 +180,13 @@ Partial Class frmAgregarAlumnos
         Me.Label8.Size = New System.Drawing.Size(73, 20)
         Me.Label8.TabIndex = 21
         Me.Label8.Tag = ""
-        Me.Label8.Text = "Matricula"
+        Me.Label8.Text = "Matrícula"
         '
         'txtMatriculaAlumno
         '
         Me.txtMatriculaAlumno.Location = New System.Drawing.Point(258, 187)
         Me.txtMatriculaAlumno.Name = "txtMatriculaAlumno"
-        Me.txtMatriculaAlumno.Size = New System.Drawing.Size(141, 20)
+        Me.txtMatriculaAlumno.Size = New System.Drawing.Size(181, 20)
         Me.txtMatriculaAlumno.TabIndex = 22
         '
         'cmbEspecialidadAlumno
@@ -195,7 +195,7 @@ Partial Class frmAgregarAlumnos
         Me.cmbEspecialidadAlumno.Items.AddRange(New Object() {"Programacion", "Laboratorio Clinico", "Contabilidad", "Administracion de Recursos Humanos", "Electricidad", "Mecatronica"})
         Me.cmbEspecialidadAlumno.Location = New System.Drawing.Point(258, 243)
         Me.cmbEspecialidadAlumno.Name = "cmbEspecialidadAlumno"
-        Me.cmbEspecialidadAlumno.Size = New System.Drawing.Size(121, 21)
+        Me.cmbEspecialidadAlumno.Size = New System.Drawing.Size(181, 21)
         Me.cmbEspecialidadAlumno.TabIndex = 23
         '
         'Label9
@@ -233,7 +233,7 @@ Partial Class frmAgregarAlumnos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(452, 346)
+        Me.ClientSize = New System.Drawing.Size(452, 356)
         Me.Controls.Add(Me.btnGuardarAlumno)
         Me.Controls.Add(Me.btnCancelarAlumno)
         Me.Controls.Add(Me.Label9)

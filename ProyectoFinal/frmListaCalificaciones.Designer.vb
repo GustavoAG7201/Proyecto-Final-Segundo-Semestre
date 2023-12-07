@@ -50,7 +50,7 @@ Partial Class frmListaCalificaciones
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(852, 367)
+        Me.ClientSize = New System.Drawing.Size(852, 382)
         Me.Controls.Add(Me.btnEliminarCalificaciones)
         Me.Controls.Add(Me.dgvListaCalificaciones)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

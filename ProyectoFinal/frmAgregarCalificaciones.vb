@@ -54,17 +54,18 @@ Public Class frmAgregarCalificaciones
         Dim alumno As String = CInt(cmbAlumno.SelectedValue)
 
         'aqui
-        Dim parcial As String = cmbParcial.SelectedItem.ToString
+        Dim parcial As String = cmbParcial.SelectedItem
         Dim promedio As Integer = nudPromedio.Value
 
 
         Dim consulta As String
 
-        If promedio = "0" Then
+        If promedio = "0" Or parcial = "" Then
             MsgBox("Por favor, llena el promedio del alumno", MsgBoxStyle.Critical, "Aviso")
+            Return
         End If
 
-        Try 'EL ERROR ES A PARTIR DE AQUI'
+        Try
             conexion1.Open()
 
             consulta = "INSERT INTO calificaciones (id_materia, id_alumnos, parcial, promedio) VALUES (" & materia & ", " & alumno & ", '" & parcial & "', " & promedio & ")"

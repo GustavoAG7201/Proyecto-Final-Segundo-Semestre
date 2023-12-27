@@ -31,7 +31,7 @@ Public Class frmAgregarAlumnos
             semestre = 0 Or
             String.IsNullOrEmpty(especialidad) Then
             MsgBox("Por favor, llena el formulario", MsgBoxStyle.Critical, "Aviso")
-            Return ' Salir del método si los campos están vacíos
+            Return
         End If
 
 

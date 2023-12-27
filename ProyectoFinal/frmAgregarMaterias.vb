@@ -12,8 +12,9 @@ Public Class frmAgregarMaterias
 
         Dim consulta As String
 
-        If nombreDocente = "" Or nombreMateria = "" Then
+        If String.IsNullOrEmpty(nombreDocente) Or String.IsNullOrEmpty(nombreMateria) Then
             MsgBox("Por favor, llena el formulario", MsgBoxStyle.Critical, "Aviso")
+            Return
         End If
 
         Try

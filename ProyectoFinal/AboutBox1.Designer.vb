@@ -168,7 +168,7 @@ Partial Class frmAcercaDe
         Me.Padding = New System.Windows.Forms.Padding(9)
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Acerca de"
+        Me.Text = "Acerca de Registro Calificaciones"
         Me.TableLayoutPanel.ResumeLayout(False)
         Me.TableLayoutPanel.PerformLayout()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
